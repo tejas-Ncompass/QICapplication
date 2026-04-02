@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/value_332dp"
+        android:layout_height="@dimen/value_100dp"
+        android:background="@drawable/popupcard_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_100dp"/>
+
+    <View
+        android:layout_width="@dimen/value_356dp"
+        android:layout_height="@dimen/value_100dp"
+        android:background="@drawable/popupcard_2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_92dp"/>
+
+    <View
+        android:layout_width="@dimen/value_380dp"
+        android:layout_height="@dimen/value_100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/popupcard_1"
+        android:layout_marginTop="@dimen/value_84dp" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/value_80dp"
+        android:src="@drawable/bell" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_heading"
+        android:fontFamily="@font/inter_font"
+        android:textFontWeight="600"
+        android:textSize="@dimen/value_15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/violet"
+        android:layout_marginTop="@dimen/value_60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_content"
+        android:fontFamily="@font/inter_font"
+        android:textSize="13dp"
+        android:textColor="@color/violet"
+        android:layout_gravity="center"
+        android:layout_marginTop="88dp"/>
+</FrameLayout>

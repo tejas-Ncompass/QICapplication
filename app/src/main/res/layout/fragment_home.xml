@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationfragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_95dp"
+        android:background="@color/maroon"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equinox"
+            android:textSize="@dimen/value_18dp"
+            android:textColor="@color/pink_3"
+            android:fontFamily="@font/inter_font"
+            android:layout_marginTop="@dimen/value_55dp"
+            android:paddingLeft="@dimen/value_18dp"/>
+
+        <ImageView
+            android:id="@+id/bell_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/value_55dp"
+            android:src="@drawable/bell_icon"
+            android:layout_toLeftOf="@id/profile_button"
+            android:paddingRight="@dimen/value_20dp"/>
+
+        <ImageView
+            android:id="@+id/profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/value_52dp"
+            android:src="@drawable/ic_profile"
+            android:paddingRight="@dimen/value_18dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_80dp"
+        android:layout_marginTop="@dimen/value_95dp"
+        android:orientation="horizontal"
+        android:background="@color/maroon">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/value_18dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_font"
+                android:text="@string/user_name"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="@dimen/value_19dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_font"
+                android:text="@string/user_designation"
+                android:textColor="@color/pink_3"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="63dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="@dimen/value_86dp"
+            android:src="@drawable/max_v" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent_scrollview"
+        android:layout_marginTop="@dimen/value_175dp"
+        android:layout_marginBottom="@dimen/value_0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_view"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

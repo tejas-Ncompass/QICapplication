@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTintMode="screen"
+    android:background="@color/white"
+    tools:context=".SetPinActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_142dp"
+        android:layout_marginTop="@dimen/value_60dp"
+        android:src="@drawable/qiclogo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_pin"
+        android:fontFamily="@font/inter_font"
+        android:textFontWeight="600"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/value_28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/value_28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/pin_code"
+        android:fontFamily="@font/inter_font"
+        android:layout_marginTop="@dimen/value_20dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_80dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:endIconMode="password_toggle"
+            app:endIconDrawable="@drawable/custom_password_toggle"
+            app:endIconScaleType="fitEnd"
+            app:endIconTint="@color/hint_color">
+
+            <com.chaos.view.PinView
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_10dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:itemBackground="@drawable/box_edittext"
+                android:textColor="@color/black"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:itemHeight="@dimen/value_48dp"
+                app:itemRadius="@dimen/value_10dp"
+                app:itemSpacing="@dimen/value_15dp"
+                app:itemWidth="@dimen/value_48dp"
+                app:lineColor="@color/grey"
+                app:viewType="rectangle"
+                android:paddingRight="@dimen/value_50dp"
+                android:paddingLeft="@dimen/value_80dp"
+                android:layout_gravity="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/set_pin_button"
+        android:layout_width="@dimen/value_340dp"
+        android:layout_height="@dimen/value_60dp"
+        android:text="@string/set_pin_button"
+        android:fontFamily="@font/inter_font"
+        android:textColor="@color/white"
+        android:textSize="@dimen/value_18sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/maroon"
+        android:layout_marginTop="@dimen/value_15dp"
+        app:cornerRadius="@dimen/value_10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:fontFamily="@font/inter_font"
+        android:textColor="@color/maroon"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_8dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">QICApplication</string>
+    <string name="welcome_message">Welcome to\nQatar Insurance Group</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="set_pin">Choose your 4-digit PIN</string>
+    <string name="pin_code">Pin code</string>
+    <string name="set_pin_button">Set Pin</string>
+    <string name="skip">SKIP THIS</string>
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="my_requests">My Requests</string>
+    <string name="approvals">Approvals</string>
+    <string name="news">News</string>
+    <string name="popup_heading">Hey Max, Gentle Reminder</string>
+    <string name="popup_content">Your resident permit is going to\nexpire on 16th of this month.</string>
+    <string name="appbar_title">Equinox</string>
+    <string name="user_name">Max Verstappen</string>
+    <string name="user_designation">Team Principal, IT Development</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="equinox">Equinox</string>
+
+
+    <string-array name="numbers">
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="requests">
+        <item>Leave Request</item>
+        <item>PMS Request</item>
+        <item>Patch Release Request</item>
+        <item>Material Request</item>
+        <item>FOC Insurance Request</item>
+        <item>Allowance</item>
+    </string-array>
+
+    <string-array name="update_time">
+        <item>Last updated: 20 May 2020 10:45 AM</item>
+        <item>Last updated: 21 May 2020 10:45 AM</item>
+        <item>Last updated: 15 May 2020 10:45 AM</item>
+        <item>Last updated: 20 May 2020 10:45 AM</item>
+        <item>Last updated: 20 May 2020 10:45 AM</item>
+        <item>Last updated: 20 May 2020 10:45 AM</item>
+    </string-array>
+
+    <array name="request_images">
+        <item>@drawable/request_1</item>
+        <item>@drawable/request_2</item>
+        <item>@drawable/request_3</item>
+        <item>@drawable/request_4</item>
+        <item>@drawable/request_5</item>
+        <item>@drawable/request_6</item>
+    </array>
+    
+</resources>

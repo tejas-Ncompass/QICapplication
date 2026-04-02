@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTintMode="screen"
+    android:background="@color/white"
+    tools:context=".LoginPageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_60dp"/>
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/value_153dp"
+        android:layout_height="@dimen/value_93dp"
+        android:layout_marginTop="@dimen/value_76dp"
+        android:src="@drawable/qiclogo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_29dp"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textColor="@color/custom_black"
+        android:fontFamily="@font/inter_font"
+        android:textFontWeight="600"
+        android:textSize="@dimen/value_22dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="@dimen/value_328dp"
+        android:layout_height="@dimen/value_58dp"
+        android:id="@+id/layout_loginId"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center"
+        app:hintEnabled="false"
+        app:boxStrokeColor="@color/grey"
+        app:boxCornerRadiusTopStart="@dimen/value_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/value_10dp"
+        app:boxCornerRadiusBottomEnd="@dimen/value_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/value_10dp"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/box_edittext"
+        android:layout_marginTop="@dimen/value_46dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edittext_emailId"
+            android:hint="@string/email_id"
+            android:fontFamily="@font/inter_font"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/value_17dp"
+            android:paddingStart="@dimen/value_16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="@dimen/value_328dp"
+        android:layout_height="@dimen/value_58dp"
+        android:id="@+id/layout_password"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/white"
+        app:hintEnabled="false"
+        android:background="@drawable/box_edittext"
+        app:boxCornerRadiusTopStart="@dimen/value_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/value_10dp"
+        app:boxCornerRadiusBottomEnd="@dimen/value_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/value_10dp"
+        app:boxBackgroundMode="none"
+        android:layout_marginTop="@dimen/value_16dp"
+        app:endIconMode="password_toggle"
+        app:endIconDrawable="@drawable/custom_password_toggle"
+        app:endIconScaleType="fitEnd"
+        app:endIconTint="@color/hint_color"
+        android:paddingEnd="@dimen/value_5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:fontFamily="@font/inter_font"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="@dimen/value_16dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/value_17dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/value_328dp"
+        android:layout_height="@dimen/value_58dp"
+        android:text="@string/login"
+        android:fontFamily="@font/inter_font"
+        android:textColor="@color/white"
+        android:textSize="@dimen/value_18sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/maroon"
+        android:layout_marginTop="@dimen/value_26dp"
+        app:cornerRadius="@dimen/value_10dp" />
+
+    <ImageView
+        android:layout_width="@dimen/value_66dp"
+        android:layout_height="@dimen/value_20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_20dp"
+        android:src="@drawable/equinox" />
+
+</LinearLayout>
