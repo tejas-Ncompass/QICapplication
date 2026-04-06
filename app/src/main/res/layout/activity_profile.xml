@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    tools:ignore="MissingClass">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_60dp"
+        android:paddingEnd="@dimen/value_18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:textFontWeight="@integer/bold"
+            android:fontFamily="@font/inter_font"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_17dp"
+            android:paddingLeft="@dimen/value_116dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="@dimen/value_120dp"
+        android:layout_height="@dimen/value_120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_40dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/value_88dp"
+        android:layout_height="@dimen/value_88dp"
+        app:cardCornerRadius="@dimen/value_18dp"
+        app:cardElevation="@dimen/value_0dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/max_v_2" />
+    </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/edit_image_Button"
+            android:layout_width="@dimen/value_34dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/value_76dp"
+            app:srcCompat="@drawable/toggle_thumb" />
+
+        <ImageView
+            android:layout_width="@dimen/value_24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_pen"
+            android:layout_gravity="end"
+            android:paddingTop="@dimen/value_82dp"
+            android:paddingEnd="@dimen/value_8dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/user_name"
+        android:textFontWeight="@integer/bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/value_17dp"
+        android:layout_marginTop="@dimen/value_15dp"
+        android:fontFamily="@font/inter_font"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_designation"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_5dp"
+        android:fontFamily="@font/inter_font"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/value_13dp"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/value_326dp"
+        android:layout_height="@dimen/value_224dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_40dp"
+        android:background="@drawable/grey_box">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/value_15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_font"
+                android:textFontWeight="@integer/medium"
+                android:paddingStart="@dimen/value_24dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/english"
+                android:layout_gravity="end"
+                android:textSize="@dimen/value_13dp"
+                android:textColor="@color/hint_color"
+                android:backgroundTint="@color/grey_1"
+                android:layout_marginTop="@dimen/value_14dp"
+                android:drawableEnd="@drawable/ic_arrow_forward"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_1dp"
+            android:background="@color/grey_2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_0dp"
+            android:layout_weight="1">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/inter_font"
+                android:paddingStart="@dimen/value_24dp"
+                android:paddingEnd="@dimen/value_24dp"
+                android:text="@string/push_notificaiton"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/medium"
+                android:textSize="@dimen/value_15dp"
+                android:thumbTint="@color/white"
+                android:track="@drawable/toogle_track"
+                android:trackTint="@color/green_2" />
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_1dp"
+            android:background="@color/grey_2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/value_15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_font"
+                android:textFontWeight="@integer/medium"
+                android:paddingStart="@dimen/value_24dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/approvals"
+                android:layout_gravity="end"
+                android:textSize="@dimen/value_13dp"
+                android:textColor="@color/hint_color"
+                android:backgroundTint="@color/grey_1"
+                android:layout_marginTop="@dimen/value_14dp"
+                android:drawableEnd="@drawable/ic_arrow_forward"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="@dimen/value_175dp"
+        android:layout_height="@dimen/value_48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_40dp"
+        android:background="@drawable/logout_button_border"
+        android:backgroundTint="@color/grey_2"
+        android:text="@string/log_out"
+        android:textColor="@color/red"
+        android:textFontWeight="@integer/bold"
+        android:textSize="@dimen/value_15dp"
+        app:rippleColor="@color/grey_2" />
+
+</LinearLayout>
