@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:backgroundTintMode="screen"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
     android:background="@color/white"
-    tools:context=".LoginPageActivity">
+    tools:context=".activities.LoginPageActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/value_60dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_60dp"
+            android:paddingStart="@dimen/value_18dp"/>
 
     <ImageView
         android:id="@+id/image_logo"
@@ -33,18 +41,17 @@
         android:textAlignment="center"
         android:textColor="@color/custom_black"
         android:fontFamily="@font/inter_font"
-        android:textFontWeight="600"
-        android:textSize="@dimen/value_22dp"
-        android:textStyle="bold" />
+        android:textFontWeight="@integer/semi_bold"
+        android:textSize="@dimen/value_22dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="@dimen/value_328dp"
-        android:layout_height="@dimen/value_58dp"
+        android:layout_height="wrap_content"
         android:id="@+id/layout_loginId"
         android:textColorHint="@color/black"
         android:layout_gravity="center"
         app:hintEnabled="false"
-        app:boxStrokeColor="@color/grey"
+        app:boxStrokeColor="@color/grey_1"
         app:boxCornerRadiusTopStart="@dimen/value_10dp"
         app:boxCornerRadiusBottomStart="@dimen/value_10dp"
         app:boxCornerRadiusBottomEnd="@dimen/value_10dp"
@@ -72,7 +79,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="@dimen/value_328dp"
-        android:layout_height="@dimen/value_58dp"
+        android:layout_height="wrap_content"
         android:id="@+id/layout_password"
         android:textColorHint="@color/black"
         android:layout_gravity="center"
@@ -129,4 +136,5 @@
         android:layout_marginTop="@dimen/value_20dp"
         android:src="@drawable/equinox" />
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

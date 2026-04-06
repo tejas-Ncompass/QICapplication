@@ -12,19 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QICApplication">
         <activity
-            android:name=".NavBarActivity"
-            android:exported="false"
-            android:parentActivityName=".LoginPageActivity"/>
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
         <activity
-            android:name=".SetPinActivity"
+            android:name=".activities.NavBarActivity"
             android:exported="false"
-             />
+            android:parentActivityName=".activities.SetPinActivity" />
         <activity
-            android:name=".LoginPageActivity"
+            android:name=".activities.SetPinActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.LoginPageActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.LoginPageActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

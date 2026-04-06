@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".NavBarActivity">
+    tools:context=".activities.NavBarActivity">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
@@ -26,10 +26,13 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:backgroundTint="@color/white"
-        app:itemRippleColor="@color/white"
+        app:itemIconTint="@color/navbar_color"
+        app:itemTextColor="@color/navbar_color"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
         app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:itemTextAppearanceActive="@style/NavMenuTextStyle"
+        app:itemTextAppearanceInactive="@style/NavMenuTextStyle"
         app:menu="@menu/bottom_nav"/>
 
 

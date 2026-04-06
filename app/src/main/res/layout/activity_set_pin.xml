@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:backgroundTintMode="screen"
     android:background="@color/white"
-    tools:context=".SetPinActivity">
+    tools:context=".activities.SetPinActivity">
 
     <ImageView
         android:id="@+id/image_logo"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/set_pin"
         android:fontFamily="@font/inter_font"
-        android:textFontWeight="600"
+        android:textFontWeight="@integer/semi_bold"
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:textSize="@dimen/value_28sp"
@@ -55,6 +55,7 @@
 
             <com.chaos.view.PinView
                 style="@style/PinWidget.PinView"
+                android:id="@+id/pin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/value_10dp"
@@ -69,7 +70,7 @@
                 app:itemRadius="@dimen/value_10dp"
                 app:itemSpacing="@dimen/value_15dp"
                 app:itemWidth="@dimen/value_48dp"
-                app:lineColor="@color/grey"
+                app:lineColor="@color/pin_view_color"
                 app:viewType="rectangle"
                 android:paddingRight="@dimen/value_50dp"
                 android:paddingLeft="@dimen/value_80dp"
@@ -97,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skip"
+        android:id="@+id/skip"
         android:fontFamily="@font/inter_font"
         android:textColor="@color/maroon"
         android:layout_gravity="center"

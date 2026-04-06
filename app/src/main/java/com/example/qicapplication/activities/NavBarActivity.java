@@ -1,8 +1,7 @@
-package com.example.qicapplication;
+package com.example.qicapplication.activities;
 
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,14 +10,14 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.example.qicapplication.R;
 import com.example.qicapplication.databinding.ActivityNavBarBinding;
 import com.example.qicapplication.navigationfragments.ApprovalsFragment;
 import com.example.qicapplication.navigationfragments.HomeFragment;
+import com.example.qicapplication.navigationfragments.MyRequestsFragment;
 import com.example.qicapplication.navigationfragments.NewsFragment;
+import com.example.qicapplication.navigationfragments.ServicesFragment;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class NavBarActivity extends AppCompatActivity {
@@ -55,6 +54,16 @@ public class NavBarActivity extends AppCompatActivity {
 
                 if(id == R.id.nav_home){
                     getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HomeFragment()).commit();
+                    return true;
+                }
+
+                if(id == R.id.nav_my_requests){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new MyRequestsFragment()).commit();
+                    return true;
+                }
+
+                if(id == R.id.nav_services){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ServicesFragment()).commit();
                     return true;
                 }
                 if(id == R.id.nav_approvals){
