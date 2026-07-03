@@ -1,4 +1,4 @@
-package com.example.qicapplication;
+package com.example.qicapplication.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,8 @@ import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.qicapplication.databinding.ActivityMainBinding;
-
-import kotlinx.coroutines.scheduling.Task;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         runnable = new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(MainActivity.this,LoginPageActivity.class);
+                Intent intent= new Intent(MainActivity.this, LoginPageActivity.class);
                 startActivity(intent);
                 finish();
             }

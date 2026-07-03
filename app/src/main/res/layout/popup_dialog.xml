@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/dialog_layout"
     android:orientation="vertical">
 
     <View
@@ -35,11 +36,11 @@
         android:src="@drawable/bell" />
 
     <TextView
+        android:id="@+id/title_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/popup_heading"
         android:fontFamily="@font/inter_font"
-        android:textFontWeight="600"
+        android:textFontWeight="@integer/semi_bold"
         android:textSize="@dimen/value_15dp"
         android:layout_gravity="center"
         android:textColor="@color/violet"
@@ -53,4 +54,15 @@
         android:textColor="@color/violet"
         android:layout_gravity="center"
         android:layout_marginTop="88dp"/>
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/value_320dp"
+        android:layout_marginTop="@dimen/value_60dp"
+        android:src="@drawable/outline_close"/>
+
+
 </FrameLayout>

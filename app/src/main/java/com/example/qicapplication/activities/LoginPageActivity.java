@@ -1,10 +1,9 @@
-package com.example.qicapplication;
+package com.example.qicapplication.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +16,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.qicapplication.R;
 import com.example.qicapplication.databinding.ActivityLoginPageBinding;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -30,6 +30,7 @@ public class LoginPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding = ActivityLoginPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -42,7 +43,7 @@ public class LoginPageActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main, (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.ime());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
@@ -82,7 +83,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(LoginPageActivity.this, NavBarActivity.class);
+        Intent intent = new Intent(LoginPageActivity.this, SetPinActivity.class);
         startActivity(intent);
         finish();
 

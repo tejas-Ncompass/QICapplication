@@ -8,4 +8,18 @@
         <item name="android:textSize">@dimen/value_18dp</item>
         <item name="android:fontFamily">@font/inter_font</item>
     </style>
+
+    <style name="roundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/white</item>
+    </style>
+
+    <style name="NavMenuTextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/value_10dp</item>
+    </style>
+
 </resources>
