@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/value_320dp"
+    android:layout_height="@dimen/value_260dp"
+    android:id="@+id/dialog_box"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/value_12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/inter_font"
+            android:text="@string/approve_remarks"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/medium"
+            android:textSize="@dimen/value_17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/close_icon"
+            android:layout_width="@dimen/value_24dp"
+            android:layout_height="@dimen/value_24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="@dimen/value_270dp"
+            android:layout_height="@dimen/value_48dp"
+            android:layout_marginTop="24dp"
+            android:gravity="top|start"
+            android:hint="@string/remarks"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="4"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/close_icon"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="@dimen/value_270dp"
+            android:layout_height="@dimen/value_42dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/green_3"
+            android:fontFamily="@font/inter_font"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/value_17dp"
+            app:cornerRadius="@dimen/value_5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

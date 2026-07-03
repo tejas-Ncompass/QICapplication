@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_1"
+    tools:context=".view.Notifications.NotificationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notifications_toolbar"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="@dimen/value_60dp"
+        android:paddingEnd="@dimen/value_18dp">
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications"
+            android:textFontWeight="@integer/bold"
+            android:fontFamily="@font/inter_font"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_17dp"
+            android:paddingStart="@dimen/value_20dp"/>
+
+        <TextView
+            android:id="@+id/mark_as_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_as_read"
+            android:textSize="@dimen/value_13dp"
+            android:fontFamily="@font/inter_font"
+            android:textColor="@color/blue"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_string"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/value_10dp"
+            android:paddingTop="@dimen/value_22dp"
+            android:paddingStart="@dimen/value_16dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="@dimen/value_100dp"
+        android:layout_marginStart="@dimen/value_16dp"
+        app:singleLine="true"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedChip="@id/all_chip">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/all_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:backgroundTint="@color/togglebtn_bg_color"
+            android:textColor="@color/togglebtn_text_color"
+            android:textSize="@dimen/value_13dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"
+            android:checkable="true"
+            android:checked="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/personal_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:backgroundTint="@color/togglebtn_bg_color"
+            android:textColor="@color/togglebtn_text_color"
+            android:textSize="@dimen/value_13dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"
+            android:checkable="true"
+            android:checked="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/others_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/others"
+            android:backgroundTint="@color/togglebtn_bg_color"
+            android:textColor="@color/togglebtn_text_color"
+            android:textSize="@dimen/value_13dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"
+            android:checkable="true"
+            android:checked="true"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/notification_fragment_container"
+        android:name="com.example.qicapplication.view.Notifications.notificationfragments.AllFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/value_148dp" />
+
+</RelativeLayout>

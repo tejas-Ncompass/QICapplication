@@ -5,13 +5,14 @@
     <string name="password">Password</string>
     <string name="login">Log in</string>
     <string name="set_pin">Choose your 4-digit PIN</string>
-    <string name="pin_code">Pin code</string>
+    <string name="pin_code">Pin Code</string>
     <string name="set_pin_button">Set Pin</string>
     <string name="skip">SKIP THIS</string>
     <string name="home">Home</string>
     <string name="services">Services</string>
     <string name="my_requests">My Requests</string>
     <string name="approvals">Approvals </string>
+    <string name="approval">Approval</string>
     <string name="news">News</string>
     <string name="popup_content">Your resident permit is going to\nexpire on 16th of this month.</string>
     <string name="appbar_title">Equinox</string>
@@ -25,7 +26,66 @@
     <string name="push_notificaiton">Push Notifications</string>
     <string name="dashboard">Dashboard</string>
     <string name="english">English </string>
-
+    <string name="notifications">Notifications</string>
+    <string name="mark_as_read">Mark all as read</string>
+    <string name="all">All</string>
+    <string name="personal">Personal</string>
+    <string name="others">Others</string>
+    <string name="filter_string">Use filter to get specific content</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="input_type">image/*</string>
+    <string name="data">data</string>
+    <string name="my_approvals">My Approval</string>
+    <string name="leave_requests">Leave Requests</string>
+    <string name="leave_request">Leave Request </string>
+    <string name="history">History</string>
+    <string name="approval_history">Approval_history</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="all_request">All Request </string>
+    <string name="approved_request">Approved Request </string>
+    <string name="rejected_request">Rejected Request </string>
+    <string name="casual_leave">Casual Leave</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="num_of_days">No. of Days</string>
+    <string name="reason">Reason</string>
+    <string name="nico">Nico Roseberg</string>
+    <string name="sophia">Sophia Jacob Singh</string>
+    <string name="start_date">25 May 2020</string>
+    <string name="end_date">27 May 2020</string>
+    <string name="two_days">2 Days</string>
+    <string name="leave_reason">I am requesting a personal leave of\nabsence from work for family reasons</string>
+    <string name="approvers">Approvers</string>
+    <string name="approve">Approve</string>
+    <string name="documents">Documents</string>
+    <string name="decline">Decline</string>
+    <string name="approve_remarks">Approve Remarks</string>
+    <string name="remarks">Remarks</string>
+    <string name="submit">Submit</string>
+    <string name="attachmnets">ATTACHMENTS</string>
+    <string name="medical_certificate">Medical Certificate.pdf</string>
+    <string name="certificate">Certificate.pdf</string>
+    <string name="appr">APPROVERS</string>
+    <string name="nico_designantion">Team Lead, IT Development</string>
+    <string name="max_designation">Manager, Administration</string>
+    <string name="sophia_designation">Event Manager</string>
+    <string name="allen_designation">Team Development</string>
+    <string name="sophia_jacobs">Sophia Jacobs</string>
+    <string name="allen">Allen Leeber Castro</string>
+    <string name="max_verstappen">Max Verstappen</string>
+    <string name="t_10.30">10.30 am</string>
+    <string name="t_11.10">11.10 am</string>
+    <string name="t_11.20">11.20 am</string>
+    <string name="k_snippet">Knowledge Snippet</string>
+    <string name="team_admin">Team Admin</string>
+    <string name="content_heading">Constructive total loss</string>
+    <string name="news_dialog_content">A loss that occurs when the cost to repair damaged property\nplus its remaining salvage value equals or exceeds\nthe property’s preload value</string>
+    <string name="dialog_title">Hey Max, Gentle Reminder</string>
+    <string name="decline_remarks">Decline Remarks</string>
 
     <string-array name="numbers">
         <item>12</item>
@@ -43,6 +103,15 @@
         <item>Material Request</item>
         <item>FOC Insurance Request</item>
         <item>Allowance</item>
+    </string-array>
+
+    <string-array name="tag">
+        <item>leave</item>
+        <item>pms</item>
+        <item>patch</item>
+        <item>material</item>
+        <item>foc</item>
+        <item>allowance</item>
     </string-array>
 
     <string-array name="update_time">
@@ -63,8 +132,200 @@
         <item>@drawable/request_6</item>
     </array>
 
+    <array name="notification_images">
+        <item>@drawable/lr_img</item>
+        <item>@drawable/dp_img</item>
+        <item>@drawable/qiclogo</item>
+    </array>
+
+    <array name="extra_image">
+        <item>0</item>
+        <item>0</item>
+        <item>@drawable/annual_event</item>
+    </array>
+
+
+    <string-array name="notification_title">
+        <item>Leave Request Approved</item>
+        <item>Data Protection Deadline</item>
+        <item>Annual Event</item>
+    </string-array>
+
+    <string-array name="notification_subtext">
+        <item>#12356 is approved by Toto Wolf</item>
+        <item>Employee consent form data\nprotection deadline is 12th May 2020</item>
+        <item>Quniox conducting annual event on\n22nd May 2020, we welcome all our\nemployees.</item>
+    </string-array>
+
+    <string-array name="notification_time">
+        <item>Just now</item>
+        <item>1 Hour ago</item>
+        <item>Last week</item>
+    </string-array>
+
+    <string-array name="notification_filter">
+        <item>personal</item>
+        <item>personal</item>
+        <item>others</item>
+    </string-array>
+
     <string-array name="dialog">
         <item>Hey Max, Gentle Reminder</item>
+    </string-array>
+
+
+    <string-array name="leave_type">
+        <item>Casual Leave</item>
+        <item>Sick Leave</item>
+        <item>Loss of Pay</item>
+        <item>Compassionate Leave</item>
+    </string-array>
+
+    <string-array name="people">
+        <item>Nico Roseberg</item>
+        <item>Max Verstappen</item>
+        <item>Lewis Hamilton</item>
+        <item>Kimi Räikkönen</item>
+    </string-array>
+
+    <string-array name="designantion">
+        <item>Team Lead, IT Develpoment</item>
+        <item>Vice President of Sales, IT and MIS</item>
+        <item>Team Lead, IT Develpoment</item>
+        <item>Team Lead, IT Develpoment</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>2 Days</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>1 Day</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>30 Dec, 2019 - 1 Jun, 2020</item>
+        <item>12 May</item>
+        <item>24 May - 26 May, 2020</item>
+        <item>27 May</item>
+    </string-array>
+
+    <string-array name="date_time">
+        <item>24 May 2020, 12:00pm</item>
+        <item>22 May 2020, 10:00am</item>
+        <item>20 May 2020, 10:10am</item>
+        <item>12 May 2020, 09:00am</item>
+    </string-array>
+
+    <string-array name="text_color">
+        <item>#0DC3F8</item>
+        <item>#F8B00D</item>
+        <item>#F80D1F</item>
+        <item>#5E0DF8</item>
+    </string-array>
+
+    <string-array name="background_color">
+        <item>#DFF7FE</item>
+        <item>#FEF4DF</item>
+        <item>#FFEFF0</item>
+        <item>#F4EFFF</item>
+    </string-array>
+
+    <array name="profile_pictures">
+        <item>@drawable/profile_1</item>
+        <item>@drawable/profile_2</item>
+        <item>@drawable/profile_3</item>
+        <item>@drawable/profile_4</item>
+    </array>
+
+    <string-array name="leave_status">
+        <item>Approved</item>
+        <item>Rejected</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <array name="status_icon">
+        <item></item>
+        <item>@drawable/ic_accepted</item>
+        <item>@drawable/ic_rejected</item>
+    </array>
+
+    <string-array name="status_color">
+        <item>#FFFFFF</item>
+        <item>#14BF70</item>
+        <item>#D33E1B</item>
+    </string-array>
+
+    <string-array name="news_title">
+        <item>Latest News</item>
+        <item>Latest News</item>
+    </string-array>
+
+    <string-array name="news_subtitle">
+        <item>Team Admin</item>
+        <item>Team Admin</item>
+    </string-array>
+
+    <string-array name="content_heading">
+        <item>QIC Reports a 5% increase in Gross\nWritten</item>
+        <item>QIC issues $300mn Tier 2 capital notes</item>
+    </string-array>
+
+    <string-array name="news_content">
+        <item>Despite the prevailing financial market\nturbulence across the globe, Qatar Insurance\nCompany announces successful issuance of</item>
+        <item>Despite the prevailing financial market\nturbulence across the globe, Qatar Insurance\nCompany announces successful issuance of</item>
+    </string-array>
+
+    <array name="news_logo">
+        <item>@drawable/qiclogo</item>
+        <item>@drawable/qiclogo</item>
+    </array>
+
+    <array name="cover_image">
+    <item>@drawable/news1_img</item>
+    <item>@drawable/news2_img</item>
+</array>
+
+    <string-array name="insurance_types">
+        <item>Health Insurance</item>
+        <item>Life Insurance</item>
+        <item>Auto Insurance</item>
+        <item>Homeowners Insurance</item>
+        <item>Renters Insurance</item>
+        <item>Travel Insurance</item>
+        <item>Pet Insurance</item>
+        <item>Disability Insurance</item>
+        <item>Critical Illness</item>
+        <item>Dental Insurance</item>
+        <item>Vision Insurance</item>
+        <item>Business Insurance</item>
+        <item>Cyber Insurance</item>
+        <item>Liability Insurance</item>
+        <item>Flood Insurance</item>
+        <item>Life Annuity</item>
+        <item>Long-term Care</item>
+        <item>Identity Theft</item>
+    </string-array>
+
+    <string-array name="subtext">
+        <item>Comprehensive medical coverage for you and\nyour family.</item>
+        <item>Financial security for your loved ones in\nthe future.</item>
+        <item>Protection for your vehicle and road liability.</item>
+        <item>Safety for your house and personal property.</item>
+        <item>Affordable coverage for your personal\nbelongings.</item>
+        <item>Coverage for trip cancellations and medical\nemergencies.</item>
+        <item>Medical care for your furry companions.</item>
+        <item>Income protection if you are unable to\nwork.</item>
+        <item>Lump-sum payment for serious health\nconditions.</item>
+        <item>Coverage for routine checkups and\nprocedures.</item>
+        <item>Benefits for eye exams, glasses, and\ncontacts.</item>
+        <item>Protect your company from unexpected\nlosses.</item>
+        <item>Defense against digital threats and data\nbreaches.</item>
+        <item>Coverage for legal claims and accidents.</item>
+        <item>Specialized protection against water\ndamage.</item>
+        <item>Guaranteed income during your retirement\nyears.</item>
+        <item>Support for daily living and nursing\ncare.</item>
+        <item>Restoration services for compromised\npersonal data.</item>
     </string-array>
 
 </resources>

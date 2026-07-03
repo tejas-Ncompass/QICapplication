@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".navigationfragments.HomeFragment">
+    android:background="@color/white_1"
+    tools:context=".view.Dashboard.navigationfragments.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -77,24 +78,20 @@
                 android:textColor="@color/pink_3" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/profile_image"
-            android:layout_width="63dp"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_profile_image"
+            android:layout_width="54dp"
             android:layout_height="54dp"
-            android:src="@drawable/max_v" />
-    </LinearLayout>
+            android:src="@drawable/max_v"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedCorners"/>
 
-    <ScrollView
-        android:id="@+id/parent_scrollview"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/value_10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,16 +100,19 @@
                 android:fontFamily="@font/inter_font"
                 android:text="@string/approvals"
                 android:textColor="@color/custom_black"
+                android:layout_marginStart="@dimen/value_18dp"
                 android:textFontWeight="@integer/semi_bold"
                 android:textSize="@dimen/value_20dp" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/value_10dp"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false"
-                />
+                android:clipToPadding="false"/>
         </LinearLayout>
-    </ScrollView>
+
 
 </LinearLayout>

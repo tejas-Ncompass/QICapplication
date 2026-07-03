@@ -23,5 +23,35 @@
         <item name="android:textSize">@dimen/value_10dp</item>
     </style>
 
+    <style name="TabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="fontFamily">@font/inter_font</item>
+        <item name="android:textFontWeight">@integer/medium</item>
+        <item name="android:textSize">@dimen/value_15dp</item>
+    </style>
+
+    <style name="ToolbarTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/inter_font</item>
+        <item name="android:textSize">@dimen/value_13dp</item>
+    </style>
+
+    <style name="NewsToolbarTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/inter_font</item>
+        <item name="android:textSize">@dimen/value_26dp</item>
+        <item name="android:textFontWeight">@integer/bold</item>
+    </style>
+
+    <style name="CustomFABShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/value_30dp</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetDialogTheme</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
     <style name="Theme.QICApplication" parent="Base.Theme.QICApplication" />
 </resources>

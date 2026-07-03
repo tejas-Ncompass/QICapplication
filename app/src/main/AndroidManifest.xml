@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,23 +20,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QICApplication">
         <activity
-            android:name=".activities.ProfileActivity"
+            android:name=".view.Approval.AttachmentsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.NavBarActivity"
-            android:exported="false"
-            android:parentActivityName=".activities.SetPinActivity" />
+            android:name=".view.Approval.ApproversActivity"
+            android:exported="false" />
         <activity
-            android:name=".activities.SetPinActivity"
-            android:exported="false"
-            android:parentActivityName=".activities.LoginPageActivity" />
+            android:name=".view.Approval.DocumentsActivity"
+            android:exported="false" />
         <activity
-            android:name=".activities.LoginPageActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false"
-            android:parentActivityName=".activities.MainActivity" />
+            android:name=".view.Approval.LeaveFormatActivity"
+            android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".view.Approval.ApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Notifications.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Dashboard.NavBarActivity"
+            android:exported="false"
+            android:parentActivityName=".view.Login.SetPinActivity" />
+        <activity
+            android:name=".view.Login.SetPinActivity"
+            android:exported="false"
+            android:parentActivityName=".view.Login.LoginPageActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".view.Login.LoginPageActivity"
+            android:exported="false"
+            android:parentActivityName=".view.MainActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

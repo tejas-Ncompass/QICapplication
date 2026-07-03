@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="@color/white_1"
+    tools:context=".view.Approval.approvalhistory.AcceptedFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/value_16dp"
+        android:paddingTop="@dimen/value_24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/approved_request"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_17dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"/>
+
+        <TextView
+            android:id="@+id/accepted_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textFontWeight="@integer/semi_bold"
+            android:textSize="@dimen/value_17dp"
+            android:paddingStart="@dimen/value_8dp"
+            android:fontFamily="@font/inter_font"
+            android:textColor="@color/hint_color"
+            android:text=" 00"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leave_approved_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false"/>
+</LinearLayout>

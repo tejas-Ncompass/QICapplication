@@ -5,10 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activities.ProfileActivity"
+    android:background="@color/white_1"
     android:backgroundTint="@color/white"
-    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:scrollbarSize="@dimen/value_8dp"
+    tools:context=".view.Profile.ProfileActivity"
     tools:ignore="MissingClass">
 
     <androidx.appcompat.widget.Toolbar
@@ -20,51 +22,49 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/more"
-            android:textFontWeight="@integer/bold"
             android:fontFamily="@font/inter_font"
+            android:paddingLeft="@dimen/value_116dp"
+            android:text="@string/more"
             android:textColor="@color/black"
-            android:textSize="@dimen/value_17dp"
-            android:paddingLeft="@dimen/value_116dp"/>
+            android:textFontWeight="@integer/bold"
+            android:textSize="@dimen/value_17dp" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
-        android:layout_width="@dimen/value_120dp"
-        android:layout_height="@dimen/value_120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/value_40dp">
-    <androidx.cardview.widget.CardView
-        android:layout_width="@dimen/value_88dp"
-        android:layout_height="@dimen/value_88dp"
-        app:cardCornerRadius="@dimen/value_18dp"
-        app:cardElevation="@dimen/value_0dp"
-        android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/profile_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/max_v_2" />
-    </androidx.cardview.widget.CardView>
+        android:layout_marginTop="40dp">
 
         <ImageButton
-            android:id="@+id/edit_image_Button"
-            android:layout_width="@dimen/value_34dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:background="@android:color/transparent"
-            android:paddingTop="@dimen/value_76dp"
-            app:srcCompat="@drawable/toggle_thumb" />
+            android:id="@+id/edit_image_button"
+            android:layout_width="@dimen/value_40dp"
+            android:layout_height="@dimen/value_40dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/value_10dp"
+            android:layout_marginBottom="@dimen/value_10dp"
+            android:background="@drawable/toggle_thumb"
+            android:elevation="@dimen/value_10dp"
+            android:padding="@dimen/value_8dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/edit_pen" />
 
-        <ImageView
-            android:layout_width="@dimen/value_24dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/edit_pen"
-            android:layout_gravity="end"
-            android:paddingTop="@dimen/value_82dp"
-            android:paddingEnd="@dimen/value_8dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/max_v_2" />
+
+        </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 
@@ -72,56 +72,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/user_name"
-        android:textFontWeight="@integer/bold"
-        android:textColor="@color/black"
-        android:textSize="@dimen/value_17dp"
         android:layout_marginTop="@dimen/value_15dp"
-        android:fontFamily="@font/inter_font"/>
+        android:fontFamily="@font/inter_font"
+        android:text="@string/user_name"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/bold"
+        android:textSize="@dimen/value_17dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/user_designation"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/value_5dp"
         android:fontFamily="@font/inter_font"
+        android:text="@string/user_designation"
         android:textColor="@color/hint_color"
-        android:textSize="@dimen/value_13dp"/>
+        android:textSize="@dimen/value_13dp" />
 
     <LinearLayout
         android:layout_width="@dimen/value_326dp"
         android:layout_height="@dimen/value_224dp"
-        android:orientation="vertical"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/value_40dp"
-        android:background="@drawable/grey_box">
+        android:background="@drawable/grey_box"
+        android:orientation="vertical">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/value_0dp"
             android:layout_weight="1">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/language"
                 android:layout_gravity="center_vertical"
-                android:textSize="@dimen/value_15dp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/inter_font"
+                android:paddingStart="@dimen/value_24dp"
+                android:text="@string/language"
+                android:textColor="@color/black"
                 android:textFontWeight="@integer/medium"
-                android:paddingStart="@dimen/value_24dp"/>
+                android:textSize="@dimen/value_15dp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/english"
                 android:layout_gravity="end"
-                android:textSize="@dimen/value_13dp"
-                android:textColor="@color/hint_color"
-                android:backgroundTint="@color/grey_1"
                 android:layout_marginTop="@dimen/value_14dp"
-                android:drawableEnd="@drawable/ic_arrow_forward"/>
+                android:backgroundTint="@color/grey_1"
+                android:drawableEnd="@drawable/ic_arrow_forward"
+                android:text="@string/english"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/value_13dp"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/grey_2" />
 
         </FrameLayout>
 
@@ -142,13 +145,15 @@
                 android:fontFamily="@font/inter_font"
                 android:paddingStart="@dimen/value_24dp"
                 android:paddingEnd="@dimen/value_24dp"
+                android:scrollbarSize="@dimen/value_8dp"
                 android:text="@string/push_notificaiton"
                 android:textColor="@color/black"
                 android:textFontWeight="@integer/medium"
                 android:textSize="@dimen/value_15dp"
                 android:thumbTint="@color/white"
                 android:track="@drawable/toogle_track"
-                android:trackTint="@color/green_2" />
+                android:trackTint="@drawable/toggle_color_selector"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
         </FrameLayout>
@@ -162,44 +167,47 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/value_0dp"
             android:layout_weight="1">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dashboard"
                 android:layout_gravity="center_vertical"
-                android:textSize="@dimen/value_15dp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/inter_font"
+                android:paddingStart="@dimen/value_24dp"
+                android:text="@string/dashboard"
+                android:textColor="@color/black"
                 android:textFontWeight="@integer/medium"
-                android:paddingStart="@dimen/value_24dp"/>
+                android:textSize="@dimen/value_15dp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/approvals"
                 android:layout_gravity="end"
-                android:textSize="@dimen/value_13dp"
-                android:textColor="@color/hint_color"
-                android:backgroundTint="@color/grey_1"
                 android:layout_marginTop="@dimen/value_14dp"
-                android:drawableEnd="@drawable/ic_arrow_forward"/>
+                android:backgroundTint="@color/grey_1"
+                android:drawableEnd="@drawable/ic_arrow_forward"
+                android:text="@string/approvals"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/value_13dp"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/grey_2" />
         </FrameLayout>
 
     </LinearLayout>
 
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/logout_button"
         android:layout_width="@dimen/value_175dp"
         android:layout_height="@dimen/value_48dp"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/value_40dp"
-        android:background="@drawable/logout_button_border"
-        android:backgroundTint="@color/grey_2"
         android:text="@string/log_out"
         android:textColor="@color/red"
         android:textFontWeight="@integer/bold"
-        android:textSize="@dimen/value_15dp"
-        app:rippleColor="@color/grey_2" />
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/value_100dp"
+        app:rippleColor="@color/grey_2"
+        app:strokeColor="@color/grey_2"
+        app:strokeWidth="@dimen/value_1dp" />
 
 </LinearLayout>

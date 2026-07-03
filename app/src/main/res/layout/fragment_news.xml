@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigationfragments.NewsFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_1"
+    tools:context=".view.Dashboard.navigationfragments.NewsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <View
+        android:id="@+id/statusBarBackground"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:background="@color/maroon" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/news_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_50dp"
+        android:background="@android:color/transparent"
+        android:paddingEnd="@dimen/value_18dp">
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_font"
+            android:paddingStart="@dimen/value_16dp"
+            android:text="@string/news"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/bold"
+            android:textSize="@dimen/value_26dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

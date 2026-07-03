@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_1"
+    tools:context=".view.Approval.ApprovalActionsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_marginBottom="@dimen/value_0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/approve_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_70dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginBottom="@dimen/value_0dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/approvers_fab"
+            android:layout_width="@dimen/value_58dp"
+            android:layout_height="@dimen/value_60dp"
+            android:layout_marginStart="@dimen/value_20dp"
+            android:backgroundTint="@color/white"
+            app:maxImageSize="@dimen/value_22dp"
+            app:shapeAppearanceOverlay="@style/CustomFABShape"
+            app:srcCompat="@drawable/approvers"
+            app:tint="@color/maroon" />
+
+        <View
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/documents_fab"
+            android:layout_width="@dimen/value_58dp"
+            android:layout_height="@dimen/value_60dp"
+            android:backgroundTint="@color/white"
+            app:maxImageSize="@dimen/value_22dp"
+            app:shapeAppearanceOverlay="@style/CustomFABShape"
+            app:srcCompat="@drawable/paperclip"
+            app:tint="@color/maroon" />
+
+        <View
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accept_fab"
+            android:layout_width="@dimen/value_58dp"
+            android:layout_height="@dimen/value_60dp"
+            android:backgroundTint="@color/white"
+            app:maxImageSize="@dimen/value_30dp"
+            app:shapeAppearanceOverlay="@style/CustomFABShape"
+            app:srcCompat="@drawable/ic_accepted"
+            app:tint="@color/green_2" />
+
+        <View
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/decline_fab"
+            android:layout_width="@dimen/value_58dp"
+            android:layout_height="@dimen/value_60dp"
+            android:layout_marginEnd="@dimen/value_20dp"
+            android:backgroundTint="@color/white"
+            app:maxImageSize="@dimen/value_30dp"
+            app:shapeAppearanceOverlay="@style/CustomFABShape"
+            app:srcCompat="@drawable/ic_rejected"
+            app:tint="@color/red" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/value_0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_font"
+            android:text="@string/approvers"
+            android:textAlignment="center"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/value_10dp" />
+
+        <TextView
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_font"
+            android:text="@string/documents"
+            android:textAlignment="center"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/value_10dp" />
+
+        <TextView
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_font"
+            android:text="@string/approve"
+            android:textAlignment="center"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/value_10dp" />
+
+        <TextView
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_font"
+            android:text="@string/decline"
+            android:textAlignment="center"
+            android:textColor="@color/grey_3"
+
+            android:textSize="@dimen/value_10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -6,9 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fillViewport="true"
     android:backgroundTintMode="screen"
     android:background="@color/white"
-    tools:context=".activities.SetPinActivity">
+    tools:context=".view.Login.SetPinActivity">
+
+    <ScrollView
+        android:id="@+id/setpin_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <ImageView
         android:id="@+id/image_logo"
@@ -39,7 +52,7 @@
         android:layout_gravity="center"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/value_80dp"
         android:orientation="horizontal"
         android:gravity="center">
@@ -72,8 +85,8 @@
                 app:itemWidth="@dimen/value_48dp"
                 app:lineColor="@color/pin_view_color"
                 app:viewType="rectangle"
-                android:paddingRight="@dimen/value_50dp"
-                android:paddingLeft="@dimen/value_80dp"
+               android:paddingRight="@dimen/value_50dp"
+                android:layout_marginStart="@dimen/value_24dp"
                 android:layout_gravity="center"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -103,6 +116,10 @@
         android:textColor="@color/maroon"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/value_8dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>

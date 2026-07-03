@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_1"
+    android:orientation="vertical"
+    tools:context=".view.Notifications.notificationfragments.AllFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/recycler_view"
+            android:padding="@dimen/value_0dp"/>
+
+</LinearLayout>

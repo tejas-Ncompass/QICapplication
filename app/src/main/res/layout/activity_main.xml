@@ -8,7 +8,7 @@
     android:backgroundTintMode="screen"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".activities.MainActivity">
+    tools:context=".view.MainActivity">
 
 
     <ImageView

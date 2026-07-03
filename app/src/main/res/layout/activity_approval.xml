@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.Approval.ApprovalActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/approval_toolbar"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="@dimen/value_80dp"
+        android:paddingEnd="@dimen/value_18dp">
+
+        <TextView
+            android:id="@+id/approval_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/approval"
+            android:layout_gravity="center"
+            android:textFontWeight="@integer/bold"
+            android:fontFamily="@font/inter_font"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_17dp"
+            android:paddingStart="@dimen/value_18dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/approval_fragment_container"
+            android:name="com.example.qicapplication.view.Approval.LeaveRequestFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/value_80dp"
+            android:layout_marginBottom="@dimen/value_5dp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/value_58dp"
+        app:checkedButton="@id/leave_requestes_button">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/leave_requestes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leave_requests"
+            android:backgroundTint="@color/togglebtn_bg_color"
+            android:textColor="@color/togglebtn_text_color"
+            android:textSize="@dimen/value_13dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/history_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:backgroundTint="@color/togglebtn_bg_color"
+            android:textColor="@color/togglebtn_text_color"
+            android:textSize="@dimen/value_13dp"
+            android:textFontWeight="@integer/semi_bold"
+            android:fontFamily="@font/inter_font"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+</RelativeLayout>

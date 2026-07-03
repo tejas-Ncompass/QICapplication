@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://android.com"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android1:layout_width="match_parent"
+    android1:layout_height="wrap_content"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android1:layout_marginHorizontal="@dimen/value_10dp"
+    android1:layout_marginTop="@dimen/value_0dp"
+    app1:cardBackgroundColor="@color/white"
+    app1:cardElevation="@dimen/value_0dp">
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:orientation="vertical">
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:id="@+id/sub_outer_layout"
+        android1:orientation="horizontal"
+        android1:padding="@dimen/value_1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android1:layout_width="@dimen/value_82dp"
+            android1:layout_height="@dimen/value_82dp"
+            android1:layout_marginStart="@dimen/value_16dp"
+            android1:layout_marginTop="@dimen/value_12dp">
+
+            <androidx.cardview.widget.CardView
+                android1:id="@+id/cardView"
+                android1:layout_width="@dimen/value_70dp"
+                android1:layout_height="@dimen/value_70dp"
+                app1:cardCornerRadius="@dimen/value_40dp"
+                app1:cardElevation="@dimen/value_1dp"
+                android1:background="@color/white"
+                android1:backgroundTint="@color/white"
+                tools2:ignore="MissingConstraints">
+
+                <ImageView
+                    android1:id="@+id/logo_view"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="match_parent"
+                    android1:scaleType="centerInside" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android1:id="@+id/notific_badge"
+                android1:layout_width="@dimen/value_15dp"
+                android1:layout_height="@dimen/value_15dp"
+                android1:elevation="@dimen/value_2dp"
+                android1:translationZ="@dimen/value_1dp"
+                app1:layout_constraintBottom_toBottomOf="@+id/cardView"
+                app1:layout_constraintEnd_toEndOf="@+id/cardView"
+                app1:srcCompat="@drawable/notification_badge" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<LinearLayout
+    android1:layout_width="wrap_content"
+    android1:layout_height="wrap_content"
+    android1:orientation="vertical">
+
+    <TextView
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:id="@+id/time_text"
+        android1:fontFamily="@font/inter_font"
+        android1:layout_marginTop="@dimen/value_8dp"
+        android1:layout_marginStart="@dimen/value_210dp"
+        android1:textColor="@color/hint_color"
+        android1:textSize="@dimen/value_10dp"
+        android1:text="12:00 PM" />
+
+    <TextView
+        android1:id="@+id/title_text_notification"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_marginStart="@dimen/value_2dp"
+        android1:layout_marginTop="@dimen/value_0dp"
+        android1:fontFamily="@font/inter_font"
+        android1:text="TitleText"
+        android1:textColor="@color/black"
+        android1:textSize="@dimen/value_15dp" />
+
+    <TextView
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:id="@+id/sub_text"
+        android1:fontFamily="@font/inter_font"
+        android1:layout_marginStart="@dimen/value_2dp"
+        android1:layout_marginBottom="@dimen/value_5dp"
+        android1:textSize="@dimen/value_13dp"
+        android1:textColor="@color/hint_color"
+        android1:text="Subtext description goes here." />
+
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android1:layout_width="@dimen/value_260dp"
+            android1:layout_height="@dimen/value_130dp"
+            android1:id="@+id/extra_image_card"
+            android1:layout_marginStart="@dimen/value_100dp"
+            android1:layout_marginBottom="@dimen/value_10dp"
+            app1:cardCornerRadius="@dimen/value_10dp"
+            android1:background="@color/white"
+            android1:backgroundTint="@color/white"
+            android1:padding="@dimen/value_2dp">
+            <ImageView
+                android1:layout_width="match_parent"
+                android1:layout_height="match_parent"
+                android1:id="@+id/image_extra"
+                android1:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android1:layout_width="match_parent"
+            android1:layout_height="@dimen/value_1dp"
+            android1:background="@color/grey_3"
+            android1:layout_marginBottom="@dimen/value_1dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
